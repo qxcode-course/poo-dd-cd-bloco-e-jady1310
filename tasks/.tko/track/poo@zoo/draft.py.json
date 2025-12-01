@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2025-12-01_19-52-15",
+            "content": "@@ -2,18 +2,19 @@\n rom \n-abc\n+ABC\n  import\n+,\n  abs\n@@ -43,11 +43,11 @@\n mal(\n-abc\n+ABC\n ):%0A \n",
+            "lines": "17"
+        },
+        {
+            "label": "2025-12-01_19-53-23",
+            "content": "@@ -12,13 +12,8 @@\n port\n- ABC,\n  abs\n@@ -42,11 +42,11 @@\n mal(\n-ABC\n+abc\n ):%0A \n@@ -294,329 +294,8 @@\n    %0A\n-class Leao(Animal):%0A    def __init__(self, nome):%0A        super().__init__(nome)%0A    %0A    def fazer_som(self):%0A        print(f%22AAAAAAAAAAR%22)%0A    def mover(self):%0A        print(f%22correndo%22)%0A    %0A    def apresentar(animal:Animal):%0A        animal.apresentar_nome()%0A        animal.fazer_som()%0A        animal.mover()%0A        %0A\n     \n",
+            "lines": "17"
+        },
+        {
+            "label": "2025-12-01_20-02-21",
+            "content": "@@ -489,16 +489,20 @@\n %22)%0A    %0A\n+    \n def apre\n@@ -524,24 +524,28 @@\n nimal):%0A    \n+   \n+ \n animal.apres\n@@ -557,16 +557,20 @@\n _nome()%0A\n+    \n     anim\n@@ -584,24 +584,28 @@\n r_som()%0A    \n+  \n+  \n animal.mover\n@@ -615,45 +615,12 @@\n     \n-print(%22tipo:%22 type(animal).__name__ )\n+    \n %0A   \n",
+            "lines": "31"
+        },
+        {
+            "label": "2025-12-01_20-04-52",
+            "content": "from abc import ABC, abstractmethod\n\nclass Animal(ABC):\n    def __init__(self, nome:str):\n        self.nome= nome\n    \n    def apresentar_nome(self):\n        print (f\"Eu sou um(a) {self.nome}!\")\n    \n    @abstractmethod\n    def fazer_som(self):\n        pass\n    \n    def mover(self):\n        pass\n    \nclass Leao(Animal):\n    def __init__(self, nome):\n        super().__init__(nome)\n    \n    def fazer_som(self):\n        print(f\"AAAAAAAAAAR\")\n    def mover(self):\n        print(f\"correndo\")\n    \ndef apresentar(animal:Animal):\n    animal.apresentar_nome()\n    animal.fazer_som()\n    animal.mover()\n    print(\"tipo:\" type(animal).__name__ )\n    ",
+            "lines": "31"
+        }
+    ]
+}
