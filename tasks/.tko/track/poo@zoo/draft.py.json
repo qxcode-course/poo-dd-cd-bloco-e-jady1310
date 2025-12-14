@@ -17,8 +17,53 @@
         },
         {
             "label": "2025-12-01_20-04-52",
-            "content": "from abc import ABC, abstractmethod\n\nclass Animal(ABC):\n    def __init__(self, nome:str):\n        self.nome= nome\n    \n    def apresentar_nome(self):\n        print (f\"Eu sou um(a) {self.nome}!\")\n    \n    @abstractmethod\n    def fazer_som(self):\n        pass\n    \n    def mover(self):\n        pass\n    \nclass Leao(Animal):\n    def __init__(self, nome):\n        super().__init__(nome)\n    \n    def fazer_som(self):\n        print(f\"AAAAAAAAAAR\")\n    def mover(self):\n        print(f\"correndo\")\n    \ndef apresentar(animal:Animal):\n    animal.apresentar_nome()\n    animal.fazer_som()\n    animal.mover()\n    print(\"tipo:\" type(animal).__name__ )\n    ",
+            "content": "@@ -605,17 +605,16 @@\n int(\n-f\n %22tipo:%22 \n ,typ\n@@ -609,17 +609,16 @@\n %22tipo:%22 \n-,\n type(ani\n@@ -633,13 +633,12 @@\n ame__ )%0A\n-%0A\n     \n",
             "lines": "31"
+        },
+        {
+            "label": "2025-12-10_20-54-42",
+            "content": "@@ -640,65 +640,8 @@\n  )%0A%0A\n-print(%22=== teste 01 ===%22)%0Aleao=Leao(%22Simba%22)%0Aapresentar(leao)\n+    \n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-12-10_21-02-41",
+            "content": "@@ -488,200 +488,12 @@\n o%22)%0A\n-%0Aclass Cobra(Animal):%0A    def __init__(self, nome):%0A        super().__init__(nome)%0A    %0A    def fazer_som(self):%0A        print(f%22sssssssssss%22)%0A    def mover(self):%0A        print(%22rastejando%22)%0A\n+    \n %0Adef\n@@ -701,60 +701,4 @@\n eao)\n-%0A%0Aprint(%22cobra%22)%0Acobra=Cobra(%22sucuri%22)%0Aapresentar(cobra)\n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-12-10_21-07-21",
+            "content": "@@ -898,16 +898,13 @@\n nt(%22\n-teste 02\n+cobra\n %22)%0Ac\n",
+            "lines": "47"
+        },
+        {
+            "label": "2025-12-10_21-07-36",
+            "content": "@@ -889,10 +889,8 @@\n eao)\n-/n\n %0A%0Apr\n",
+            "lines": "47"
+        },
+        {
+            "label": "2025-12-10_21-07-44",
+            "content": "@@ -885,16 +885,18 @@\n ar(leao)\n+/n\n %0A%0Aprint(\n",
+            "lines": "47"
+        },
+        {
+            "label": "2025-12-10_21-07-50",
+            "content": "@@ -681,206 +681,8 @@\n %22)%0A%0A\n-class Elefante(Animal):%0A    def __init__(self, nome):%0A        super().__init__(nome)%0A%0A    def fazer_som(self):%0A        print(f%22Duum-duum, Duum-duum%22)%0A    def mover(self):%0A        print(%22correndo%22)%0A%0A\n def \n@@ -948,79 +948,4 @@\n bra)\n-%0A%0Aprint(%22=== teste 03 ===%22)%0Aelefante=Elefante(%22Dumbo%22)%0Aapresentar(elefante)\n",
+            "lines": "47"
+        },
+        {
+            "label": "2025-12-10_21-12-34",
+            "content": "@@ -1096,20 +1096,16 @@\n nt(%22\n-=== \n teste 02\n ===%22\n@@ -1100,19 +1100,16 @@\n teste 02\n-===\n %22)%0Acobra\n",
+            "lines": "60"
+        },
+        {
+            "label": "2025-12-10_21-12-53",
+            "content": "@@ -1104,17 +1104,16 @@\n teste 02\n- \n ===%22)%0Aco\n",
+            "lines": "60"
+        },
+        {
+            "label": "2025-12-10_21-15-18",
+            "content": "from abc import ABC, abstractmethod\n\nclass Animal(ABC):\n    def __init__(self, nome:str):\n        self.nome= nome\n    \n    def apresentar_nome(self):\n        print (f\"Eu sou um(a) {self.nome}!\")\n    \n    @abstractmethod\n    def fazer_som(self):\n        pass\n    \n    def mover(self):\n        pass\n    \nclass Leao(Animal):\n    def __init__(self, nome):\n        super().__init__(nome)\n    \n    def fazer_som(self):\n        print(f\"AAAAAAAAAAR\")\n    def mover(self):\n        print(f\"correndo\")\n\nclass Cobra(Animal):\n    def __init__(self, nome):\n        super().__init__(nome)\n    \n    def fazer_som(self):\n        print(f\"sssssssssss\")\n    def mover(self):\n        print(\"rastejando\")\n\nclass Elefante(Animal):\n    def __init__(self, nome):\n        super().__init__(nome)\n\n    def fazer_som(self):\n        print(f\"Duum-duum, Duum-duum\")\n    def mover(self):\n        print(\"correndo\")\n\ndef apresentar(animal:Animal):\n    animal.apresentar_nome()\n    animal.fazer_som()\n    animal.mover()\n    print(f\"tipo:\" ,type(animal).__name__ )\n\nprint(\"=== teste 01 ===\")\nleao=Leao(\"Simba\")\napresentar(leao)\n\nprint(\"=== teste 02 ===\")\ncobra=Cobra(\"sucuri\")\napresentar(cobra)\n\nprint(\"=== teste 03 ===\")\nelefante=Elefante(\"Dumbo\")\napresentar(elefante)",
+            "lines": "60"
         }
     ]
 }
